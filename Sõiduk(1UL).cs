@@ -13,18 +13,15 @@ namespace OOP_c_
     public class Sõiduk
     {
         public string Nimi;
-
         public Sõiduk()
         {
             Console.Write("Sisesta sõiduki nimi: ");
             Nimi = Console.ReadLine();
         }
-
         public Sõiduk(string nimi)
         {
             Nimi = nimi;
         }
-
         public virtual void Sõida()
         {
             Console.WriteLine($"{Nimi} liigub.");

@@ -12,7 +12,6 @@ namespace OOP_c_
         public Auto() : base() { }
 
         public Auto(string nimi) : base(nimi) { }
-
         public override void Sõida()
         {
             Console.WriteLine($"{Nimi} sõidab autoga.");

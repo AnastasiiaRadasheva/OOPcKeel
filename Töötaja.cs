@@ -12,13 +12,22 @@ namespace OOP_c_
     {
         public string Ametikoht = "Keevitaja";
 
+        public double Tuunitasu = 15.50;
+        public int Tuunid {  get; set; }
+
+
         public void Töötan()
         {
             Console.WriteLine($"{Nimi} töötab ametikohal {Ametikoht}.");
         }
         public override void Mida_teeb()
         {
+
             Console.WriteLine();
+        }
+        public double ArvutaPalk()
+        {
+            return Tuunitasu * Tuunid;
         }
     }
 }
